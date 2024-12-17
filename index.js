@@ -5,10 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             document.getElementById('navbar-placeholder').innerHTML = data;
         });
-    
-    // const container = document.querySelector('.container1');
-    // const heightInpPx = window.innerHeight * 0.75;
-    // container.style.height ='${heightInPixels}px';
         
     let scrollableDiv = document.querySelector('.scrollable-container');
     let planets = document.querySelectorAll('.planet');
@@ -17,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     let margin = parseInt(window.getComputedStyle(planets[0]).marginLeft) * 2;
     let scrollAmount = planets[0].offsetWidth + margin; // Set scrollAmount
 
-    
     planets.forEach(planet => {
         // Adding zoom in and out feature to the planets 
         planet.style.transition = "all 0.3s";
@@ -36,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
         
     let index = 4;  
-    // Adding event listeners to the buttons
+    // Adding scroll functionality to the buttons
     const buttons = document.querySelectorAll('.prev,.next');        
     buttons.forEach(button => {
         button.addEventListener("click", function() {   
@@ -49,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             currentPosition = scrollableDiv.scrollLeft;
             //To make buttons unclickable after a certain point 
-            console.log(index);
             if(index <= 1)  buttons[0].style.pointerEvents = "none";
             else buttons[0].style.pointerEvents = "auto";
             if(index >= 9) buttons[1].style.pointerEvents = "none";
