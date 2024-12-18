@@ -4,11 +4,9 @@
     height: 100%;
     width: 100%;
     font-size: 16px;
-    padding-top: 3.5rem;
     overflow-x: hidden;
     background-color: #f7be4d;
 }
-
 .title {
     width: 100%;
     display: flex;
@@ -16,36 +14,29 @@
     justify-content: center;
     align-items: center;
     padding: 0.5em 0 0.5rem 0;
+    text-align: center;
 }
-
 .title.earth {
     background-color: rgb(133, 120, 214);
 }
-
 .title.mercury {
     background-color: #797979;
 }
-
 .title.venus {
     background-color: #fce8a7;
 }
-
 .title.mars {
     background-color: #ce4d37;
 }
-
 .title.saturn {
     background-color: #cca86f;
 }
-
 .title.jupiter {
     background-color: #ce8a4e;
 }
-
 .title.uranus {
     background-color: #5fbcd5;
 }
-
 .title.neptune {
     background-color: #2b60c2;
 }
@@ -54,7 +45,6 @@
     margin-bottom: 0;
     line-height: 1.2em;
 }
-
 .title-b-text {
     font-size: 2.5em;
     font-weight: lighter;
@@ -74,7 +64,6 @@
     align-items: stretch;
     flex-wrap: wrap;
 }
-
 .info-container {
     height: auto;
     flex: 50%;
@@ -82,8 +71,8 @@
     justify-content: center;
     align-items: center;
     background-color: #f7be4d;
+    padding: 4em;
 }
-
 .info-title {
     margin-bottom: 0.8rem;
 }
@@ -98,65 +87,40 @@
     height: auto;
     background-color: #f7be4d;
 }
-
-.one .img-container {
-   background-color: black;
-}
-.four .img-container {
-    background-color: #010016;
-}
-.img-container.mercury, .img-container.venus,.img-container.mars {
+.img-container.mercury, .img-container.venus,.img-container.mars,.img-container.earth,.img-container.saturn,.img-container.uranus {
     background-color: black;
-}
-.img-container.uranus {
-    background-color: #08080c;
 }
 .img-container img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
 .img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
- 
-.info {
-    padding: 4em;
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #808080;
 }
-
+.footer p{
+    margin: 0;
+    font-size: 1.5rem;
+}
 @media screen and (max-width:600px) {
     .container1 {
         height: auto;
     }
-    .info-container {
-        flex: 100%;
-        max-height: 100vh;
-    }
-
-    .img-container {
-        flex: 100%;
-        max-height: 100vh;
-    }
-    
-    .reverse .info-container {
-        order: 2;
-    }
-
-    .reverse .img-container {
-        order: 1;
-    }
-
     .text {
         font-size: 1rem;
     }
-
     .title-text {
         font-size: 3rem;
     }
-
     .title-b-text {
         font-size: 2rem;
     }
@@ -164,25 +128,33 @@
         padding: 3em 1em 3em 1em;
      }
 }
-
 @media screen and (max-width:1200px) {
     .info-container {
         flex: 100%;
         max-height: 100vh;
     }
-
     .img-container {
         flex: 100%;
         max-height: 100vh;
     }
-    
     .reverse .info-container {
         order: 2;
     }
-
     .reverse .img-container {
         order: 1;
     }
+}
 
-    
+@media screen and (min-width:2400px) {
+
+    body,html {
+        font-size:20px;
+    }
+
+}
+
+@media screen and (min-width:3000px) {
+    body,html {
+        font-size:30px;
+    }
 }

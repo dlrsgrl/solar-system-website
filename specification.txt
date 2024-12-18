@@ -1,0 +1,33 @@
+HTML Tags 
+
+1 = <div>
+2 = <p>
+3 = <img>
+4 = <h3>
+5 = <a>
+6 = <footer>
+7 = <article>
+8 = <header>
+9 = <section>
+10 = <main>
+
+For Bootstrap
+<nav> 
+<ul>
+<li> 
+<button>
+<span> 
+
+CSS Properties
+
+justify-content
+object-fit
+display
+flex-wrap
+background-color
+overflow-x
+
+I used Bootstrap for navigation bar with a dropdown linked list.
+I used JavaScript to fetch and load the navbar from an external file, set up scrollable navigation for the planets section, added zoom-in and zoom-out functionality, 
+enabled tooltips on hover, and implemented link functionality for the planets.Also, I added event listeners to navigation buttons to control scrolling and made 
+them unclickable after a certain point.
