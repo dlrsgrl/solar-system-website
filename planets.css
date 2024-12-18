@@ -5,7 +5,7 @@
     width: 100%;
     font-size: 16px;
     overflow-x: hidden;
-    background-color: #f7be4d;
+    
 }
 .title {
     width: 100%;
@@ -15,6 +15,10 @@
     align-items: center;
     padding: 0.5em 0 0.5rem 0;
     text-align: center;
+}
+
+.title.sun {
+    background-color: #e79600  ;
 }
 .title.earth {
     background-color: rgb(133, 120, 214);
@@ -54,6 +58,7 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    background-color: #f8b734;
 }
 .container1 {
     width: 100%;
@@ -70,7 +75,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f7be4d;
+    /* background-color: #f7be4d; */
     padding: 4em;
 }
 .info-title {
@@ -85,7 +90,7 @@
     align-items: center;
     flex: 50%;
     height: auto;
-    background-color: #f7be4d;
+    /* background-color: #f7be4d; */
 }
 .img-container.mercury, .img-container.venus,.img-container.mars,.img-container.earth,.img-container.saturn,.img-container.uranus {
     background-color: black;
@@ -111,7 +116,7 @@
     margin: 0;
     font-size: 1.5rem;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:600px) and (max-width: 1024px) {
     .container1 {
         height: auto;
     }
@@ -124,7 +129,7 @@
     .title-b-text {
         font-size: 2rem;
     }
-     .info {
+     .info-container {
         padding: 3em 1em 3em 1em;
      }
 }

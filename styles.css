@@ -164,6 +164,10 @@ body,html{
     font-weight: 500;
     top: 65%;
   }
+
+  .toolt {
+    pointer-events: none;
+  }
 }
 
 .placeholder {
@@ -171,7 +175,6 @@ body,html{
   visibility: hidden;
 }
 
-/* Medium screens: min-width 601px and max-width 991px */
 @media screen and (min-width: 601px) and (max-width: 991px) {
   .planet {
     width: 15vw; /* Adjusted size */
@@ -195,7 +198,6 @@ body,html{
     font-weight: 500;
     top: 70%;
   }
-
 }
 
 @media screen and (min-width: 992px) and (max-width: 1300px) {
@@ -221,6 +223,3 @@ body,html{
   }
 }
 
-@media screen and (min-width:1921){
-  
-}
