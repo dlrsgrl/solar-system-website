@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         //Adding planets link function
         planet.addEventListener("click", function(e) {
             let target = e.target;
-            window.location.href =  target.classList[0] + '.html';
+            window.location.href =  'html/' + target.classList[0] + '.html';
         });
     });
         
